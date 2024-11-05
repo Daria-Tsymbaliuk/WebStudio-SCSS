@@ -1,0 +1,16 @@
+.header-logo, .footer-logo{
+    font-family: $secondaryFont;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    color: $blackTitelColor;
+}
+.span-logo{
+    color:$accentColor ;
+}
+.footer-logo{
+    color: $whiteColor ;
+    margin-bottom: 20px;
+    display: inline-block;
+}
