@@ -17,18 +17,20 @@
     letter-spacing: 1.08px;
 }
 .team-item{
-    background-color: $whiteColor;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     width: 270px;
     height: 428px;
     padding-bottom: 30px; 
-
+    background-color: $whiteColor;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); 
+    
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+    &:hover{
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    }
 }
-.team-item:hover{
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
+
 .team-subtitle{
     margin-top: 30px;
     margin-bottom: 10px;
@@ -50,15 +52,16 @@
     justify-content: center;
 }
 .worker-link {
-    padding: 12px;
-    background-color: $whiteColor;
-    border-radius: 50%;
     display: flex;
+    padding: 12px;
+    border-radius: 50%;
     fill: $svgColor;
+    background-color: $whiteColor;
 
     transition: background-color,  fill,  250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.worker-link:hover{
-    background-color:$accentColor;
-    fill: $whiteColor;
+
+    &:hover{
+        background-color:$accentColor;
+        fill: $whiteColor;
+    }
 }
