@@ -25,17 +25,7 @@
     color: $whiteColor;
  }
 .hero-button {
-     padding: 10px 32px;
-     border: none;
-     cursor: pointer;
-     border-radius: 4px;
-     background-color: $accentColor;
-     color: $whiteColor ;
-     font-weight: 700;
-     line-height: 1.8;
-     font-size: 16px;
-     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-     letter-spacing: 0.96px; 
+     @include button( 10px , 32px );
      animation: size-btn 1s  ease-in-out infinite;
     
  }

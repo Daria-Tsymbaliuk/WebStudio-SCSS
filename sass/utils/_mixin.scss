@@ -1,0 +1,14 @@
+@mixin button ($paddingTop , $paddingRigLef) {
+    padding: $paddingTop  $paddingRigLef;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #2196F3;
+    border: none;
+    color: $whiteColor;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+    
