@@ -307,14 +307,6 @@ p {
   position: relative;
 }
 
-.icon-position:hover .form-input {
-  border: 2px solid #2196f3;
-}
-
-.icon-position:hover .icon {
-  fill: #2196f3;
-}
-
 .icon {
   position: absolute;
   top: 50%;
@@ -326,6 +318,9 @@ p {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icon-position:hover .icon {
+  fill: #2196f3;
+}
 
 .form-input {
   width: 100%;
@@ -335,6 +330,9 @@ p {
   padding: 12px 40px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-position:hover .form-input {
+  border: 2px solid #2196f3;
 }
 
 .comment-field {
