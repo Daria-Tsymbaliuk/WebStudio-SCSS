@@ -47,9 +47,7 @@
     margin-bottom: 28px;
 }
 .worker-list {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+    @extend %flex-list; 
 }
 .worker-link {
     display: flex;

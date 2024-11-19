@@ -58,9 +58,7 @@
 }
 
 .footer-socials-list {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+ @extend %flex-list;
 }
 .footer-socials-link {
     display: flex;
