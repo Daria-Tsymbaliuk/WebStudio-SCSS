@@ -20,3 +20,10 @@
     letter-spacing: 0.78px;
     color: $logoColor;
 }
+
+@mixin flex-set ($type, $mainAxis, $gapSize){
+    display: $type;
+    justify-content: $mainAxis;
+    gap: $gapSize;
+        
+    } 

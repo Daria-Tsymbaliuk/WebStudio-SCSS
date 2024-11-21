@@ -6,6 +6,15 @@ body{
   max-width: 1170px; 
     padding: 0 15px;
     margin: 0 auto;
+    @media screen and ($mobile) {
+      width: 480px;
+  }
+  @media screen and ($tablet) {
+      width: 768px;
+  }
+  @media screen and ($desktop) {
+      width: 1200px;
+  }
 }
 p {
     color: $mainTextColor;

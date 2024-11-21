@@ -58,7 +58,7 @@
 }
 
 .footer-socials-list {
- @extend %flex-list;
+@include flex-set ( flex , center , 16px);
 }
 .footer-socials-link {
     display: flex;

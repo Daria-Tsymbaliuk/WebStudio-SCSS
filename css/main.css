@@ -1,13 +1,3 @@
-.footer-socials-list, .worker-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 h1,
 h2,
 h3,
@@ -47,6 +37,21 @@ body {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 p {
@@ -164,7 +169,7 @@ p {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 60px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../Pictures/bcg-color-hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Pictures/bcg-color-hero.jpg);
   background-repeat: no-repeat;
@@ -173,17 +178,17 @@ p {
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
-  line-height: 1.4;
-  font-size: 44px;
-  letter-spacing: 2.64px;
+  line-height: 1;
+  font-size: 26px;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
-  max-width: 696px;
+  max-width: 360px;
   text-align: center;
   color: #ffffff;
 }
 
 .hero-button {
-  padding: 10px 32px;
+  padding: 10px 24px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
@@ -674,6 +679,16 @@ p {
   margin-bottom: 28px;
 }
 
+.worker-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+
 .worker-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,6 +821,16 @@ p {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-top: 10px;
+}
+
+.footer-socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
 }
 
 .footer-socials-link {

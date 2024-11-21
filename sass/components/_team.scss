@@ -47,7 +47,7 @@
     margin-bottom: 28px;
 }
 .worker-list {
-    @extend %flex-list; 
+    @include flex-set ( flex , center , 16px);
 }
 .worker-link {
     display: flex;
