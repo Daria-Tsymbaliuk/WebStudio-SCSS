@@ -1,13 +1,12 @@
+
 .header-logo {
     @include logo ($blackTitelColor);
 }
 
 .footer-logo{
     @include logo ($whiteColor);
+    display: block;
     margin-bottom: 20px;
-    display: inline-block;
+    text-align: center;
 }
-
-.span-logo{
-    color:$accentColor ;
-}
+ 

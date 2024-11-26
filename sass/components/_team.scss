@@ -1,28 +1,28 @@
 .team {
     background-color: $buttonBcgColor;
-    padding-top:94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
 }                       
-.team-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
+
 .team-title{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
-    font-size: 36px;
-    letter-spacing: 1.08px;
+    font-size: 28px;
+    letter-spacing: 0.84px;
+    color: $blackTitelColor;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .team-item{
-    width: 270px;
-    height: 428px;
-    padding-bottom: 30px; 
+    width: 450px;
+    padding-bottom: 24px; 
     background-color: $whiteColor;
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); 
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
@@ -38,16 +38,17 @@
     line-height: 1.2;
     font-size: 16px;
     text-align: center;
+    color: $blackTitelColor;
 }
 .team-text{
     font-weight: 400;
     line-height: 1.2;
     font-size: 16px;
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }
 .worker-list {
-    @include flex-set ( flex , center , 16px);
+    @include flex-set ( flex , center , 10px);
 }
 .worker-link {
     display: flex;
