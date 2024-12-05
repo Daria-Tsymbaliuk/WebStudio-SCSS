@@ -8,5 +8,9 @@
     display: block;
     margin-bottom: 20px;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        text-align: left; 
+      }
 }
  

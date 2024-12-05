@@ -11,17 +11,18 @@
 <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="body-portfolio">
-    <header class="header pr-header">
-        <div class="container header-container">
-            <a href="#" class="header-logo"><span class="span-logo">Web</span>Studio</a>
-            <!-- навігація -->
+    <header class="header">
+        <div class="container">
+           <div class="header-mob-tabl-position header-desk-position">
+            <a href="#" class="header-logo animate__animated animate__backInDown"><span class="span-logo">Web</span>Studio</a>
+         
             <nav class="header-nav">  
                 <ul class="header-list"> 
-                    <li class="header-item"><a href="./index.html" class="header-page">Студія</a></li>
-                    <li  class="header-item"><a href="./portfolio.html" class="header-page currently">Портфоліо</a></li>
+                    <li class="header-item"><a href="./index.html" class="header-page currently">Студія</a></li>
+                    <li  class="header-item"><a href="./portfolio.html" class="header-page">Портфоліо</a></li>
                     <li  class="header-item"><a href="#" class="header-page">Контакти</a></li>
                 </ul>
-                  <!-- список про посилання -->
+               
             </nav>
             <ul class="header-contacts"> 
                 <li class="header-item">
@@ -37,6 +38,56 @@
                     </a>
                 </li>
              </ul>
+             <!-- Mobile menu button-->
+              <button type="button" class="menu-toggle  js-open-menu" aria-expanded="false"  aria-controls="mobile-menu">
+                <svg>
+                    <use href="./Pictures/symboldefs.svg#menu-mobile"></use>
+                </svg>
+              </button>
+           </div>
+           <!-- Mobile menu -->
+            <div class=" menu-container js-menu-container">
+                <button type="button" class="menu-btn-close  js-close-menu"  >
+                    <svg>
+                        <use href="./Pictures/symboldefs.svg#close"></use>
+                    </svg>
+                  </button>
+           <ul class="mob-nav-list"> 
+            <li class="mob-nav-item"><a href="./index.html" class="mob-nav-page currently">Студія</a></li>
+            <li  class="mob-nav-item"><a href="./portfolio.html" class="mob-nav-page">Портфоліо</a></li>
+            <li  class="mob-nav-item"><a href="#" class="mob-nav-page">Контакти</a></li>
+        </ul>
+       
+      
+      <ul class="mob-contacts"> 
+        <li class="mob-item">
+            <a href="mailto:info@devstudio.com"  class="mob-link">
+                <svg width="16" height="12"><use href="./Pictures/symboldefs.svg#envelope"></use></svg>
+                info@devstudio.com
+            </a>
+        </li>
+        <li class="header-item">
+            <a class="mob-link" href="tel:+380961111111" target="_blank">
+                <svg width="10" height="16" class="svg"><use href="./Pictures/symboldefs.svg#smartphone"></use></svg>
+                +38 096 111 11 11
+            </a>
+        </li>
+       </ul>
+         <ul class="mob-social-list">
+            <li class="mob-social-item">
+               <a href="#" class="mob-social-link"></a>
+            </li>
+            <li class="mob-social-item">
+                <a href="#" class="mob-social-link"></a>
+             </li>
+             <li class="mob-social-item">
+                <a href="#" class="mob-social-link"></a>
+             </li>
+             <li class="mob-social-item">
+                <a href="#" class="mob-social-link"></a>
+             </li>
+          </ul>
+         </div>
         </div>
        </header>
        
@@ -186,16 +237,16 @@
       </section>
     </main>
     <footer class="footer">
-        <div class="container">
-          <div class="footer-wrap">
+        <div class="container footer-wrap">
+          <div class="footer-tabl-position">
             <div class="footer-thumb">
             <a href="#" class="footer-logo"><span class="span-logo">Web</span>Studio</a>
-            <!-- список про посиланя номер2 -->
+          
             <address class="footer-adress">
             <ul class="footer-list"> 
                 <li class="footer-item"><a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m10!1m2!2m1!1z0LMuINCa0LjQtdCyLCDQv9GALdGCINCb0LXRgdC4INCj0LrRgNCw0LjQvdC60LgsIDI2!3m6!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!15sCjPQsy4g0JrQuNC10LIsINC_0YAt0YIg0JvQtdGB0Lgg0KPQutGA0LDQuNC90LrQuCwgMjaSARFjb21wb3VuZF9idWlsZGluZ-ABAA!16s%2Fg%2F1tctq5jv?entry=ttu" target="_blank" class="footer-URL">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li><a href="tel:+380961111111" target="_blank" class="footer-link">+380961111111</a></li>  
                 <li><a href="info@devstudio.com" target="_blank" class="footer-link" >info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" target="_blank" class="footer-link">+380961111111</a></li>  
              </ul>
             </address>
             </div>
@@ -223,7 +274,8 @@
                         </a>
                     </li>
                 </ul>        
-             </div>
+              </div>
+            </div>
              <div class="footer-stand">
                 <h2 class="footer-subtitle">Підпишіться на розсилку</h2>
                 <form class="footer-form">
