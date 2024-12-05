@@ -1,10 +1,15 @@
 .clients {
-    padding: 94px 0;
+    @media screen and (min-width:$mobile){
+        padding: 60px 0;
+    }
+    @media screen and (min-width:$desktop){
+        padding: 94px 0;
+    }
 }
 .clients-title{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1.08px;
@@ -15,19 +20,33 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    @media screen  and (min-width:$desktop){
+      flex-wrap: nowrap;
+    }
+}
+
+.clients-item {
+    height: 92px;
+    @media screen  and (min-width:$mobile){
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen  and (min-width:$tablet){
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .clients-link{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
-    height: 92px;
+    width: 100%; 
+    height: 100%;
     border-radius: 4px;
     border: 1px solid $svgColor;
     fill: $svgColor;
     
-    transition: border,  fill,  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),  
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover{
         fill: $accentColor;

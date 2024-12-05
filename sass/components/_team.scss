@@ -1,6 +1,11 @@
 .team {
     background-color: $buttonBcgColor;
-    padding: 60px 0;
+    @media screen and (min-width:$mobile){
+        padding: 60px 0;
+    }
+    @media screen and (min-width:$desktop){
+        padding: 94px 0;
+    }
 }                       
 
 .team-title{
@@ -16,9 +21,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    @media screen and (min-width:$desktop) {
+       justify-content: center;
+       flex-wrap: nowrap;
+    }
 }
 .team-item{
-    width: 450px;
+   
     padding-bottom: 24px; 
     background-color: $whiteColor;
     border-radius: 0px 0px 4px 4px;
@@ -26,6 +35,13 @@
     
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
+    @media screen and (min-width:$tablet) {
+        flex-basis: calc((100% - 30px) /2 ); 
+    }
+    @media screen and (min-width:$desktop) {
+        width: 270px;
+        height: 428px; 
+    }
     &:hover{
         box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     }

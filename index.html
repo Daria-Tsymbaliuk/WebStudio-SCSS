@@ -13,8 +13,9 @@
 <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-   <!-- <header class="header">
+   <header class="header">
     <div class="container header-container">
+       <div class="header-mob-position">
         <a href="#" class="header-logo animate__animated animate__backInDown"><span class="span-logo">Web</span>Studio</a>
      
         <nav class="header-nav">  
@@ -39,8 +40,58 @@
                 </a>
             </li>
          </ul>
+         <!-- Mobile menu button-->
+          <button type="button" class="menu-toggle  js-open-menu" aria-expanded="false"  aria-controls="mobile-menu">
+            <svg>
+                <use href="./Pictures/symboldefs.svg#menu-mobile"></use>
+            </svg>
+          </button>
+       </div>
+       <!-- Mobile menu -->
+        <div class=" menu-container js-menu-container">
+            <button type="button" class="menu-btn-close  js-close-menu"  >
+                <svg>
+                    <use href="./Pictures/symboldefs.svg#close"></use>
+                </svg>
+              </button>
+       <ul class="mob-nav-list"> 
+        <li class="mob-nav-item"><a href="./index.html" class="mob-nav-page currently">Студія</a></li>
+        <li  class="mob-nav-item"><a href="./portfolio.html" class="mob-nav-page">Портфоліо</a></li>
+        <li  class="mob-nav-item"><a href="#" class="mob-nav-page">Контакти</a></li>
+    </ul>
+   
+  
+  <ul class="mob-contacts"> 
+    <li class="mob-item">
+        <a href="mailto:info@devstudio.com"  class="mob-link">
+            <svg width="16" height="12"><use href="./Pictures/symboldefs.svg#envelope"></use></svg>
+            info@devstudio.com
+        </a>
+    </li>
+    <li class="header-item">
+        <a class="mob-link" href="tel:+380961111111" target="_blank">
+            <svg width="10" height="16" class="svg"><use href="./Pictures/symboldefs.svg#smartphone"></use></svg>
+            +38 096 111 11 11
+        </a>
+    </li>
+   </ul>
+     <ul class="mob-social-list">
+        <li class="mob-social-item">
+           <a href="#" class="mob-social-link"></a>
+        </li>
+        <li class="mob-social-item">
+            <a href="#" class="mob-social-link"></a>
+         </li>
+         <li class="mob-social-item">
+            <a href="#" class="mob-social-link"></a>
+         </li>
+         <li class="mob-social-item">
+            <a href="#" class="mob-social-link"></a>
+         </li>
+      </ul>
+     </div>
     </div>
-   </header> -->
+   </header>
     <main>
     <!-- section про замолення послуги -->
     <section class="hero">
@@ -52,7 +103,7 @@
    
     <section class="advantages">
         <div class="container">
-        <h2 class="advantages-title">Наші переваги </h2>
+        <h2 class="advantages-title visually-hidden">Наші переваги </h2>
         
       <ul class="advantages-list">
        <li class="advantages-item">
@@ -74,7 +125,7 @@
        </ul> 
     </div>
     </section>
-<!--  
+ 
     <section class="work">
     <div class="container">
         <h2  class="work-title" data-aos="fade-left">Чим ми займаємося</h2>
@@ -100,7 +151,7 @@
            </li>
         </ul>
     </div>
-    </section> -->
+    </section>
 
     <section class="team">
     <div class="container">
@@ -375,7 +426,8 @@
         </div>
     </div> 
 </body>
-<script src="./script.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/mobile-menu.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
