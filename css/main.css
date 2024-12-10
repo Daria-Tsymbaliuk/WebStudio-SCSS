@@ -429,7 +429,6 @@ p {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../Pictures/bcg-color-hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Pictures/bcg-color-hero.jpg);
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -783,18 +782,6 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (min-width: 1200px) {
-  .advantages-list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
-}
 
 .advantages-item {
   display: -webkit-box;
@@ -810,8 +797,8 @@ p {
 }
 @media screen and (min-width: 768px) {
   .advantages-item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -819,9 +806,8 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .advantages-item {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -873,7 +859,11 @@ p {
   font-size: 14px;
   margin-bottom: 10px;
   color: #212121;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .advantages-subtitle {
+    text-align: center;
+  }
 }
 
 .advantages-text {
@@ -1244,7 +1234,6 @@ p {
 
 .footer-title,
 .footer-subtitle {
-  text-align: center;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;

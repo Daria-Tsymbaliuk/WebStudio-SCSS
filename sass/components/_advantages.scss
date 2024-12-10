@@ -12,23 +12,17 @@
     row-gap: 30px;
     column-gap: 30px;
     flex-wrap: wrap;
-    @media screen and (min-width:$desktop){
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: stretch;
-}
 }
 .advantages-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     @media screen and (min-width:$tablet){
-        flex-basis: calc(( 100% - 60px ) / 2);
+        flex-basis: calc(( 100% - 30px ) / 2);
         align-items: center;
     }
     @media screen and (min-width:$desktop){
-        justify-content: flex-start;
-        
+        flex-basis: calc(( 100% - 90px ) / 4);
     }
 }
 .advantages-item::before{
@@ -71,9 +65,9 @@
     font-size: 14px;
     margin-bottom: 10px;
     color: $blackTitelColor;
-    text-align: center;
-
-}
+    @media screen and (max-width: 767px) {
+        text-align: center; }
+ }
 .advantages-text{
     font-weight: 400;
     line-height: 1.7;
