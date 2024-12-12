@@ -9,9 +9,16 @@
 }                    
 .portfolio-btns{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 8px ;
+    align-items: center;
     margin-bottom: 50px ;
+}
+@media (max-width: $tablet) {
+    .portfolio-btns {
+      justify-content: center; 
+    }
 }
 .portfolio-element {
     padding: 6px 22px;
@@ -42,18 +49,29 @@
      flex-wrap: wrap;  
      row-gap: 30px;
      column-gap: 30px;
+     justify-content: center;
     
 }
     
 .portfolio-item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 1);
     background-color: $whiteColor;
-    max-width: 370px;
+    width: 450px;
+    height: 404px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); 
     
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
+      
+    @media screen and (min-width:$tablet) {
+        flex-basis: calc((100% - 30px) /2 ); 
+    }
+    @media screen and (min-width:$desktop) {
+        flex-basis: calc((100% - 60px) / 3);
+        max-width: 370px;
+    }
+
     &:hover{
         box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     }
