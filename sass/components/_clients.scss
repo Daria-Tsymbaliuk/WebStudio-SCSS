@@ -1,5 +1,5 @@
 .clients {
-    @media screen and (min-width:$mobile){
+    @media screen and (max-width: 1199px){
         padding: 60px 0;
     }
     @media screen and (min-width:$desktop){
@@ -27,7 +27,7 @@
 
 .clients-item {
     height: 92px;
-    @media screen  and (min-width:$mobile){
+    @media screen  and (max-width: 767px){
         flex-basis: calc((100% - 30px) / 2);
     }
     @media screen  and (min-width:$tablet){
